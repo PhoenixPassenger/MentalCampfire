@@ -85,6 +85,7 @@
 				850F3F0A2451D195001E95C2 /* MentalCampfireTests */,
 				850F3F152451D195001E95C2 /* MentalCampfireUITests */,
 				850F3EF22451D18E001E95C2 /* Products */,
+				850F3F242451D503001E95C2 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +109,6 @@
 				850F3EFD2451D195001E95C2 /* Assets.xcassets */,
 				850F3EFF2451D195001E95C2 /* LaunchScreen.storyboard */,
 				850F3F022451D195001E95C2 /* Info.plist */,
-				850F3F242451D503001E95C2 /* .gitignore */,
 			);
 			path = MentalCampfire;
 			sourceTree = "<group>";
