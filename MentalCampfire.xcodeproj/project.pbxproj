@@ -20,6 +20,8 @@
 		850F3F0C2451D195001E95C2 /* MentalCampfireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F3F0B2451D195001E95C2 /* MentalCampfireTests.swift */; };
 		850F3F172451D195001E95C2 /* MentalCampfireUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F3F162451D195001E95C2 /* MentalCampfireUITests.swift */; };
 		850F3F252451D503001E95C2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 850F3F242451D503001E95C2 /* .gitignore */; };
+		852BC6E224585BF7007D2A66 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6E124585BF7007D2A66 /* TipsViewController.swift */; };
+		852BC6E4245861D6007D2A66 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6E3245861D6007D2A66 /* Tip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +45,7 @@
 		7B00C71A245303780080CB77 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		7B00C71C245390AB0080CB77 /* Fogueira.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fogueira.storyboard; sourceTree = "<group>"; };
 		7B00C71E245390D30080CB77 /* respiracao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = respiracao.storyboard; sourceTree = "<group>"; };
-		7B00C720245390F20080CB77 /* meditacao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = meditacao.storyboard; sourceTree = "<group>"; };
+		7B00C720245390F20080CB77 /* meditacao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = meditacao.storyboard; path = MentalCampfire/View/meditacao.storyboard; sourceTree = SOURCE_ROOT; };
 		7B00C7222453912B0080CB77 /* midia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = midia.storyboard; sourceTree = "<group>"; };
 		7B00C724245391510080CB77 /* configuracao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = configuracao.storyboard; sourceTree = "<group>"; };
 		850F3EF12451D18E001E95C2 /* MentalCampfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentalCampfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +61,8 @@
 		850F3F162451D195001E95C2 /* MentalCampfireUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalCampfireUITests.swift; sourceTree = "<group>"; };
 		850F3F182451D195001E95C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		850F3F242451D503001E95C2 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		852BC6E124585BF7007D2A66 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		852BC6E3245861D6007D2A66 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tip.swift; path = MentalCampfire/View/Tip.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				7B00C720245390F20080CB77 /* meditacao.storyboard */,
 				7B00C7222453912B0080CB77 /* midia.storyboard */,
 				7B00C724245391510080CB77 /* configuracao.storyboard */,
+				852BC6E124585BF7007D2A66 /* TipsViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 		7B00C719245303560080CB77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				852BC6E3245861D6007D2A66 /* Tip.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -305,7 +311,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				850F3EF52451D18E001E95C2 /* AppDelegate.swift in Sources */,
+				852BC6E4245861D6007D2A66 /* Tip.swift in Sources */,
 				850F3EF72451D18E001E95C2 /* SceneDelegate.swift in Sources */,
+				852BC6E224585BF7007D2A66 /* TipsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
