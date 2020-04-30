@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b70-eP-ysv">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="nyk-uU-ZbP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X3x-We-sOg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campfire" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-tL-Kk1">
-                                <rect key="frame" x="49.5" y="194" width="276" height="215"/>
+                                <rect key="frame" x="205" y="52" width="257" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="IvA-9z-9vr"/>
                                     <constraint firstAttribute="height" constant="215" id="VsI-OI-rXZ"/>
@@ -40,7 +40,7 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;A beleza começa no momento em que você começa a ser você mesmo.&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf9-hr-maI">
-                                <rect key="frame" x="49.5" y="459" width="276" height="61"/>
+                                <rect key="frame" x="205" y="262" width="257" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -51,7 +51,7 @@
                             <constraint firstItem="eCg-tL-Kk1" firstAttribute="centerX" secondItem="d5a-bz-MVe" secondAttribute="centerX" id="9QZ-hL-XsV"/>
                             <constraint firstItem="Lf9-hr-maI" firstAttribute="leading" secondItem="eCg-tL-Kk1" secondAttribute="leading" id="GV3-Nx-Dts"/>
                             <constraint firstItem="eCg-tL-Kk1" firstAttribute="top" secondItem="d5a-bz-MVe" secondAttribute="top" constant="150" id="Vj0-Ug-McW"/>
-                            <constraint firstItem="eCg-tL-Kk1" firstAttribute="top" secondItem="d5a-bz-MVe" secondAttribute="top" constant="15" id="mbj-mC-73z"/>
+                            <constraint firstItem="eCg-tL-Kk1" firstAttribute="top" secondItem="d5a-bz-MVe" secondAttribute="top" constant="20" id="mbj-mC-73z"/>
                             <constraint firstItem="Lf9-hr-maI" firstAttribute="trailing" secondItem="eCg-tL-Kk1" secondAttribute="trailing" id="nmH-LW-fW5"/>
                             <constraint firstItem="Lf9-hr-maI" firstAttribute="top" secondItem="eCg-tL-Kk1" secondAttribute="bottom" constant="10" id="q0L-l0-v4A"/>
                             <constraint firstItem="Lf9-hr-maI" firstAttribute="top" secondItem="eCg-tL-Kk1" secondAttribute="bottom" constant="50" id="wkC-mk-Sbi"/>
@@ -92,7 +92,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="36d-7j-mt2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="32"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
