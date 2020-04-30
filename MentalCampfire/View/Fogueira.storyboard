@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b70-eP-ysv">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nyk-uU-ZbP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,87 +12,26 @@
             <objects>
                 <viewController id="nyk-uU-ZbP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X3x-We-sOg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campfire" translatesAutoresizingMaskIntoConstraints="NO" id="eCg-tL-Kk1">
-                                <rect key="frame" x="49.5" y="194" width="276" height="215"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="IvA-9z-9vr"/>
-                                    <constraint firstAttribute="height" constant="215" id="VsI-OI-rXZ"/>
-                                    <constraint firstAttribute="width" secondItem="eCg-tL-Kk1" secondAttribute="height" multiplier="167:130" id="eHv-g9-PVW"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="IvA-9z-9vr"/>
-                                        <exclude reference="VsI-OI-rXZ"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="IvA-9z-9vr"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="VsI-OI-rXZ"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;A beleza começa no momento em que você começa a ser você mesmo.&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lf9-hr-maI">
-                                <rect key="frame" x="49.5" y="459" width="276" height="61"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="eCg-tL-Kk1" firstAttribute="centerX" secondItem="d5a-bz-MVe" secondAttribute="centerX" id="9QZ-hL-XsV"/>
-                            <constraint firstItem="Lf9-hr-maI" firstAttribute="leading" secondItem="eCg-tL-Kk1" secondAttribute="leading" id="GV3-Nx-Dts"/>
-                            <constraint firstItem="eCg-tL-Kk1" firstAttribute="top" secondItem="d5a-bz-MVe" secondAttribute="top" constant="150" id="Vj0-Ug-McW"/>
-                            <constraint firstItem="eCg-tL-Kk1" firstAttribute="top" secondItem="d5a-bz-MVe" secondAttribute="top" constant="20" id="mbj-mC-73z"/>
-                            <constraint firstItem="Lf9-hr-maI" firstAttribute="trailing" secondItem="eCg-tL-Kk1" secondAttribute="trailing" id="nmH-LW-fW5"/>
-                            <constraint firstItem="Lf9-hr-maI" firstAttribute="top" secondItem="eCg-tL-Kk1" secondAttribute="bottom" constant="10" id="q0L-l0-v4A"/>
-                            <constraint firstItem="Lf9-hr-maI" firstAttribute="top" secondItem="eCg-tL-Kk1" secondAttribute="bottom" constant="50" id="wkC-mk-Sbi"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d5a-bz-MVe"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Vj0-Ug-McW"/>
-                                <exclude reference="mbj-mC-73z"/>
-                                <exclude reference="q0L-l0-v4A"/>
-                                <exclude reference="wkC-mk-Sbi"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="mbj-mC-73z"/>
-                                <include reference="q0L-l0-v4A"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="Vj0-Ug-McW"/>
-                                <include reference="wkC-mk-Sbi"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="zmu-Lc-cgx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zNl-SR-XFW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-985.50724637681162" y="46.205357142857139"/>
+            <point key="canvasLocation" x="-984.05797101449286" y="46.875"/>
         </scene>
         <!--Fogueira-->
         <scene sceneID="BLn-hT-HZP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b70-eP-ysv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Fogueira" image="flame.fill" catalog="system" id="yzn-Fo-zpo"/>
+                    <tabBarItem key="tabBarItem" title="Fogueira" image="pencil" catalog="system" selectedImage="pencil" id="yzn-Fo-zpo"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="36d-7j-mt2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -106,7 +45,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="campfire" width="334.5" height="260"/>
-        <image name="flame.fill" catalog="system" width="54" height="64"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
     </resources>
 </document>
