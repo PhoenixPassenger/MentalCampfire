@@ -106,8 +106,6 @@
 				7B00C720245390F20080CB77 /* meditacao.storyboard */,
 				7B00C7222453912B0080CB77 /* midia.storyboard */,
 				7B00C724245391510080CB77 /* configuracao.storyboard */,
-				852BC6E124585BF7007D2A66 /* TipsViewController.swift */,
-				852BC6E52459A0F7007D2A66 /* MeditationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,7 +113,9 @@
 		7B00C718245303490080CB77 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				852BC6E52459A0F7007D2A66 /* MeditationViewController.swift */,
 				7BDEB418245A3B9400FA612A /* ConfigStaticTableViewController.swift */,
+				852BC6E124585BF7007D2A66 /* TipsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

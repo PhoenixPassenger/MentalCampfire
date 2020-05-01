@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Izv-9o-VFG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Izv-9o-VFG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -53,7 +53,7 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0X-q5-Cj6">
                                                     <rect key="frame" x="349" y="10" width="51" height="24"/>
                                                     <connections>
-                                                        <action selector="changePermission:" destination="M7u-Fq-oCL" eventType="valueChanged" id="6xG-Va-Zyu"/>
+                                                        <action selector="changePermission:" destination="M7u-Fq-oCL" eventType="valueChanged" id="SWy-M5-c9j"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
@@ -84,7 +84,7 @@
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RG8-NY-3m6">
                                                     <rect key="frame" x="349" y="10" width="51" height="24"/>
                                                     <connections>
-                                                        <action selector="changeSound:" destination="M7u-Fq-oCL" eventType="valueChanged" id="diS-Gw-N2h"/>
+                                                        <action selector="changeSound:" destination="M7u-Fq-oCL" eventType="valueChanged" id="MKR-4O-P12"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
@@ -114,7 +114,7 @@
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Z5o-NG-QM4">
                                                     <rect key="frame" x="88" y="10" width="312" height="25"/>
                                                     <connections>
-                                                        <action selector="changeVolume:" destination="M7u-Fq-oCL" eventType="valueChanged" id="ce1-Ts-HMi"/>
+                                                        <action selector="changeVolume:" destination="M7u-Fq-oCL" eventType="valueChanged" id="wRB-oi-Apa"/>
                                                     </connections>
                                                 </slider>
                                             </subviews>
@@ -173,6 +173,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="gear" catalog="system" width="64" height="58"/>
     </resources>
 </document>
