@@ -12,8 +12,6 @@
 		7B00C71F245390D30080CB77 /* respiracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71E245390D30080CB77 /* respiracao.storyboard */; };
 		7B00C721245390F20080CB77 /* meditacao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C720245390F20080CB77 /* meditacao.storyboard */; };
 		7B00C7232453912B0080CB77 /* midia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C7222453912B0080CB77 /* midia.storyboard */; };
-		7B00C725245391510080CB77 /* configuracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C724245391510080CB77 /* configuracao.storyboard */; };
-		7BDEB419245A3B9400FA612A /* ConfigStaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDEB418245A3B9400FA612A /* ConfigStaticTableViewController.swift */; };
 		850F3EF52451D18E001E95C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F3EF42451D18E001E95C2 /* AppDelegate.swift */; };
 		850F3EF72451D18E001E95C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F3EF62451D18E001E95C2 /* SceneDelegate.swift */; };
 		850F3EFE2451D195001E95C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850F3EFD2451D195001E95C2 /* Assets.xcassets */; };
@@ -50,8 +48,6 @@
 		7B00C71E245390D30080CB77 /* respiracao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = respiracao.storyboard; sourceTree = "<group>"; };
 		7B00C720245390F20080CB77 /* meditacao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = meditacao.storyboard; path = MentalCampfire/View/meditacao.storyboard; sourceTree = SOURCE_ROOT; };
 		7B00C7222453912B0080CB77 /* midia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = midia.storyboard; sourceTree = "<group>"; };
-		7B00C724245391510080CB77 /* configuracao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = configuracao.storyboard; sourceTree = "<group>"; };
-		7BDEB418245A3B9400FA612A /* ConfigStaticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigStaticTableViewController.swift; sourceTree = "<group>"; };
 		850F3EF12451D18E001E95C2 /* MentalCampfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentalCampfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		850F3EF42451D18E001E95C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		850F3EF62451D18E001E95C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,9 +102,6 @@
 				7B00C71E245390D30080CB77 /* respiracao.storyboard */,
 				7B00C720245390F20080CB77 /* meditacao.storyboard */,
 				7B00C7222453912B0080CB77 /* midia.storyboard */,
-				7B00C724245391510080CB77 /* configuracao.storyboard */,
-				852BC6E124585BF7007D2A66 /* TipsViewController.swift */,
-				852BC6E52459A0F7007D2A66 /* MeditationViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,7 +109,8 @@
 		7B00C718245303490080CB77 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7BDEB418245A3B9400FA612A /* ConfigStaticTableViewController.swift */,
+				852BC6E52459A0F7007D2A66 /* MeditationViewController.swift */,
+				852BC6E124585BF7007D2A66 /* TipsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,7 +293,6 @@
 				850F3F252451D503001E95C2 /* .gitignore in Resources */,
 				7B00C7232453912B0080CB77 /* midia.storyboard in Resources */,
 				850F3F012451D195001E95C2 /* LaunchScreen.storyboard in Resources */,
-				7B00C725245391510080CB77 /* configuracao.storyboard in Resources */,
 				852BC6E9245AFF9D007D2A66 /* Invisible.mp3 in Resources */,
 				7B00C71F245390D30080CB77 /* respiracao.storyboard in Resources */,
 				7B00C71D245390AB0080CB77 /* Fogueira.storyboard in Resources */,
@@ -429,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -483,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -537,7 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 795A25396T;
 				INFOPLIST_FILE = MentalCampfireTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,7 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 795A25396T;
 				INFOPLIST_FILE = MentalCampfireTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
