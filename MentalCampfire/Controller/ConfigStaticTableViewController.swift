@@ -2,7 +2,7 @@
 //  ConfigStaticTableViewController.swift
 //  MentalCampfire
 //
-//  Created by Patricia Sampaio on 29/04/20.
+//  Created by Patricia Sampaio on 01/05/20.
 //  Copyright © 2020 Rodrigo Silva Ribeiro. All rights reserved.
 //
 
@@ -23,6 +23,9 @@ class ConfigStaticTableViewController: UITableViewController {
     }
     
     @IBAction func changeSound(_ sender: UISwitch) {
+        let message = sender.isOn ?
+        "Notificações ativas" : "Notificações desativadas"
+        print(message)
     }
     
     @IBAction func changeVolume(_ sender: UISlider) {
@@ -32,3 +35,6 @@ class ConfigStaticTableViewController: UITableViewController {
     
     
 }
+
+
+
