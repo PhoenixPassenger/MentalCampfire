@@ -40,4 +40,11 @@ class FogueiraController: UIViewController {
          phraseLabel.text = phraseDay.getPhrase()
      }
      
+    override func viewDidDisappear(_ animated: Bool) {
+        MyAudio().pause()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        MyAudio().play()
+    }
 }

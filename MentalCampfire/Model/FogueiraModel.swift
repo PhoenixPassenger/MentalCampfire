@@ -10,7 +10,6 @@ import Foundation
 
 struct PhraseModel {
     
-    var acess = Int.random(in: 1...12)
     
     var dayPhrase = ["\"A beleza começa no momento que você começa a ser você mesmo.\"",
                      "\"Queda após queda, desafio após desafio eu me fortaleço e me torno mais resiliente.\"\n[Coco Chanel]",
@@ -25,7 +24,9 @@ struct PhraseModel {
                      "\"Não importa que você perca as batalhas, o que importa é como você cura suas feridas de guerra.\"",
                      "\"Quando se machucar, lembre-se que ninguém alcança o sucesso sem carregar algumas cicatrizes.\""
                ]
+   
     
+    var acess = Int.random(in: 1...12)
     func getPhrase () -> String {
         return dayPhrase[acess]
     }
