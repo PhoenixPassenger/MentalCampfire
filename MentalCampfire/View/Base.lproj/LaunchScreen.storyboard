@@ -23,7 +23,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="oEF-r6-169" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FTV-e6-EBP"/>
                             <constraint firstItem="oEF-r6-169" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ecT-a7-dpV"/>
