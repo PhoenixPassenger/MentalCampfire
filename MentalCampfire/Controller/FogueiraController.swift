@@ -7,19 +7,37 @@
 //
 
 import UIKit
-
+import AVFoundation
 class FogueiraController: UIViewController {
     
     var phraseDay = PhraseModel()
+    var player = AVAudioPlayer()
     
     @IBOutlet weak var phraseLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        uptadeUI ()
+   func SetupPlayer(nome:String, formato:String) -> AVAudioPlayer{
+        let sound = Bundle.main.path(forResource: nome, ofType: formato)
+        do {
+            player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+            player.setVolume(0.1, fadeDuration: 180)
+       } catch  {
+            print(error)
+           }
+        return player
     }
     
-    @objc func uptadeUI (){
-        phraseLabel.text = phraseDay.getPhrase()
+    func MyAudio() -> AVAudioPlayer{
+        return SetupPlayer(nome: "Fogueira", formato: "mp3")
     }
+       
+    override func viewDidLoad() {
+         super.viewDidLoad()
+         uptadeUI ()
+         MyAudio().play()
+     }
+     
+     @objc func uptadeUI (){
+         phraseLabel.text = phraseDay.getPhrase()
+     }
+     
 }
