@@ -89,5 +89,14 @@ class MeditationViewController: UIViewController {
         setupPlayer()
     }
     
-
+    override func viewDidDisappear(_ animated: Bool) {
+        guard let playerForSwitch = player else { return }
+        playerForSwitch.pause()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard let playerForSwitch = player else { return }
+        playerForSwitch.play()
+    }
+    
 }
