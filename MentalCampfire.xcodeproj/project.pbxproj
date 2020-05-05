@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1982DE4C24604E4E00DC6B46 /* Fogueira.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1982DE4B24604E4E00DC6B46 /* Fogueira.mp3 */; };
+		1982DE4E24605FBF00DC6B46 /* MidiaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982DE4D24605FBF00DC6B46 /* MidiaViewController.swift */; };
+		1982DE502460626800DC6B46 /* MidiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982DE4F2460626800DC6B46 /* MidiaTableViewCell.swift */; };
+		19EBE7E824619851005A5F44 /* MidiaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBE7E724619851005A5F44 /* MidiaCollectionViewCell.swift */; };
+		19EBE7EA24619ECA005A5F44 /* MidiaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBE7E924619ECA005A5F44 /* MidiaModel.swift */; };
 		7B00C71B245303780080CB77 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71A245303780080CB77 /* TabBar.storyboard */; };
 		7B00C71D245390AB0080CB77 /* Fogueira.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71C245390AB0080CB77 /* Fogueira.storyboard */; };
 		7B00C71F245390D30080CB77 /* respiracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71E245390D30080CB77 /* respiracao.storyboard */; };
@@ -49,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		1982DE4B24604E4E00DC6B46 /* Fogueira.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fogueira.mp3; sourceTree = "<group>"; };
+		1982DE4D24605FBF00DC6B46 /* MidiaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaViewController.swift; sourceTree = "<group>"; };
+		1982DE4F2460626800DC6B46 /* MidiaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaTableViewCell.swift; sourceTree = "<group>"; };
+		19EBE7E724619851005A5F44 /* MidiaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaCollectionViewCell.swift; sourceTree = "<group>"; };
+		19EBE7E924619ECA005A5F44 /* MidiaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MidiaModel.swift; sourceTree = "<group>"; };
 		7B00C71A245303780080CB77 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		7B00C71C245390AB0080CB77 /* Fogueira.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Fogueira.storyboard; sourceTree = "<group>"; };
 		7B00C71E245390D30080CB77 /* respiracao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = respiracao.storyboard; sourceTree = "<group>"; };
@@ -132,6 +140,9 @@
 				852BC6E124585BF7007D2A66 /* TipsViewController.swift */,
 				7B31FF6A245F832B007F37C3 /* FogueiraController.swift */,
 				7B90F94A245C9FFE00F6689A /* ConfigStaticTableViewController.swift */,
+				1982DE4D24605FBF00DC6B46 /* MidiaViewController.swift */,
+				1982DE4F2460626800DC6B46 /* MidiaTableViewCell.swift */,
+				19EBE7E724619851005A5F44 /* MidiaCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +152,7 @@
 			children = (
 				7B31FF68245F7E4D007F37C3 /* FogueiraModel.swift */,
 				852BC6E3245861D6007D2A66 /* Tip.swift */,
+				19EBE7E924619ECA005A5F44 /* MidiaModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -352,8 +364,12 @@
 				852BC6E62459A0F7007D2A66 /* MeditationViewController.swift in Sources */,
 				850F3EF72451D18E001E95C2 /* SceneDelegate.swift in Sources */,
 				7B31FF69245F7E4D007F37C3 /* FogueiraModel.swift in Sources */,
+				1982DE502460626800DC6B46 /* MidiaTableViewCell.swift in Sources */,
+				1982DE4E24605FBF00DC6B46 /* MidiaViewController.swift in Sources */,
+				19EBE7EA24619ECA005A5F44 /* MidiaModel.swift in Sources */,
 				852BC6E224585BF7007D2A66 /* TipsViewController.swift in Sources */,
 				7B90F94B245C9FFE00F6689A /* ConfigStaticTableViewController.swift in Sources */,
+				19EBE7E824619851005A5F44 /* MidiaCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
