@@ -50,6 +50,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWZ-kk-XVW">
                                                     <rect key="frame" x="349" y="10" width="51" height="24"/>
+                                                    <color key="onTintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="changePermission:" destination="bTH-3p-rcS" eventType="valueChanged" id="OZh-qZ-U9u"/>
                                                     </connections>
@@ -81,6 +82,7 @@
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4si-fi-rRB">
                                                     <rect key="frame" x="349" y="10" width="51" height="24"/>
+                                                    <color key="onTintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="changeSound:" destination="bTH-3p-rcS" eventType="valueChanged" id="fOB-qh-60d"/>
                                                     </connections>
@@ -111,7 +113,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zn3-8x-E0o">
-                                                    <rect key="frame" x="88" y="10" width="312" height="25"/>
+                                                    <rect key="frame" x="88" y="9" width="312" height="25"/>
+                                                    <color key="minimumTrackTintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="changeVolume:" destination="bTH-3p-rcS" eventType="valueChanged" id="bof-9J-7Ab"/>
                                                     </connections>
@@ -150,6 +153,7 @@
                                                 </textField>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8yk-kn-Nqz">
                                                     <rect key="frame" x="349" y="10" width="51" height="24"/>
+                                                    <color key="onTintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="changeTimeSelectionTfd:" destination="bTH-3p-rcS" eventType="valueChanged" id="HeK-VB-25x"/>
                                                     </connections>
