@@ -26,7 +26,7 @@ struct PhraseModel {
                ]
    
     
-    var acess = Int.random(in: 1...12)
+    var acess = Int.random(in: 0...11)
     func getPhrase () -> String {
         return dayPhrase[acess]
     }
