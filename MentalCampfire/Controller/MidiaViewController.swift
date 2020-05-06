@@ -11,6 +11,9 @@ import UIKit
 class MidiaViewController:UIViewController{
     
     @IBOutlet weak var tableView: UITableView!
+
+  
+    
     
     let conteudo = MidiaModel().midia
     let label = MidiaModel().label
@@ -43,7 +46,30 @@ extension MidiaViewController: UITableViewDelegate, UITableViewDataSource{
 }
 
 extension MidiaViewController: MidiaTableViewCellDelegate {
-    func didSelectItem(at indexPath: IndexPath, row: Int) {
-        print(row, indexPath.item)
+    func didSelectItem(at indexPath: IndexPath, row: Int,imageName:String,name:String ) {
+        if (label[row] == "Vídeos"){
+            let video = Video( name: name, imageName: imageName)
+            print(video)
+            self.performSegue(withIdentifier: "videoSegue", sender: video)
+        }else{
+            let audio = Audio( name: name, imageName: imageName)
+            self.performSegue(withIdentifier: "audioSegue", sender: audio)
+            print(audio)
+        }
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        switch segue.identifier {
+//        case "videoSegue":
+//            guard
+//                let destiny = segue.destination as? VideoViewController,
+//                let video = sender as? Video else { return }
+//
+//
+//        case "audioSegue":
+//
+//        default:
+//            print("Segue nao especificada")
+//        }
+//    }
 }
