@@ -1,0 +1,315 @@
+diff --git a/MentalCampfire.xcodeproj/project.pbxproj b/MentalCampfire.xcodeproj/project.pbxproj
+index a290b6e..81d01da 100644
+--- a/MentalCampfire.xcodeproj/project.pbxproj
++++ b/MentalCampfire.xcodeproj/project.pbxproj
+@@ -32,6 +32,10 @@
+ 		852BC6E4245861D6007D2A66 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6E3245861D6007D2A66 /* Tip.swift */; };
+ 		852BC6E62459A0F7007D2A66 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6E52459A0F7007D2A66 /* MeditationViewController.swift */; };
+ 		852BC6E9245AFF9D007D2A66 /* Invisible.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 852BC6E8245AFF9D007D2A66 /* Invisible.mp3 */; };
++		852BC6EC2462E61C007D2A66 /* AudioInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6EB2462E61C007D2A66 /* AudioInfo.swift */; };
++		852BC6EE2462E898007D2A66 /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6ED2462E898007D2A66 /* VideoInfo.swift */; };
++		852BC6F02462F312007D2A66 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6EF2462F312007D2A66 /* AudioViewController.swift */; };
++		852BC6F22462F328007D2A66 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6F12462F328007D2A66 /* VideoViewController.swift */; };
+ /* End PBXBuildFile section */
+ 
+ /* Begin PBXContainerItemProxy section */
+@@ -83,6 +87,10 @@
+ 		852BC6E3245861D6007D2A66 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tip.swift; path = MentalCampfire/View/Tip.swift; sourceTree = SOURCE_ROOT; };
+ 		852BC6E52459A0F7007D2A66 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+ 		852BC6E8245AFF9D007D2A66 /* Invisible.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Invisible.mp3; sourceTree = "<group>"; };
++		852BC6EB2462E61C007D2A66 /* AudioInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioInfo.swift; sourceTree = "<group>"; };
++		852BC6ED2462E898007D2A66 /* VideoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
++		852BC6EF2462F312007D2A66 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
++		852BC6F12462F328007D2A66 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+ /* End PBXFileReference section */
+ 
+ /* Begin PBXFrameworksBuildPhase section */
+@@ -143,6 +151,8 @@
+ 				1982DE4D24605FBF00DC6B46 /* MidiaViewController.swift */,
+ 				1982DE4F2460626800DC6B46 /* MidiaTableViewCell.swift */,
+ 				19EBE7E724619851005A5F44 /* MidiaCollectionViewCell.swift */,
++				852BC6EF2462F312007D2A66 /* AudioViewController.swift */,
++				852BC6F12462F328007D2A66 /* VideoViewController.swift */,
+ 			);
+ 			path = Controller;
+ 			sourceTree = "<group>";
+@@ -153,6 +163,8 @@
+ 				7B31FF68245F7E4D007F37C3 /* FogueiraModel.swift */,
+ 				852BC6E3245861D6007D2A66 /* Tip.swift */,
+ 				19EBE7E924619ECA005A5F44 /* MidiaModel.swift */,
++				852BC6EB2462E61C007D2A66 /* AudioInfo.swift */,
++				852BC6ED2462E898007D2A66 /* VideoInfo.swift */,
+ 			);
+ 			path = Model;
+ 			sourceTree = "<group>";
+@@ -366,10 +378,14 @@
+ 				7B31FF69245F7E4D007F37C3 /* FogueiraModel.swift in Sources */,
+ 				1982DE502460626800DC6B46 /* MidiaTableViewCell.swift in Sources */,
+ 				1982DE4E24605FBF00DC6B46 /* MidiaViewController.swift in Sources */,
++				852BC6EC2462E61C007D2A66 /* AudioInfo.swift in Sources */,
+ 				19EBE7EA24619ECA005A5F44 /* MidiaModel.swift in Sources */,
++				852BC6F22462F328007D2A66 /* VideoViewController.swift in Sources */,
+ 				852BC6E224585BF7007D2A66 /* TipsViewController.swift in Sources */,
+ 				7B90F94B245C9FFE00F6689A /* ConfigStaticTableViewController.swift in Sources */,
+ 				19EBE7E824619851005A5F44 /* MidiaCollectionViewCell.swift in Sources */,
++				852BC6EE2462E898007D2A66 /* VideoInfo.swift in Sources */,
++				852BC6F02462F312007D2A66 /* AudioViewController.swift in Sources */,
+ 			);
+ 			runOnlyForDeploymentPostprocessing = 0;
+ 		};
+diff --git a/MentalCampfire.xcodeproj/project.xcworkspace/xcuserdata/rodrigosilvaribeiro.xcuserdatad/UserInterfaceState.xcuserstate b/MentalCampfire.xcodeproj/project.xcworkspace/xcuserdata/rodrigosilvaribeiro.xcuserdatad/UserInterfaceState.xcuserstate
+index 7cb3028..ea7cfbb 100644
+Binary files a/MentalCampfire.xcodeproj/project.xcworkspace/xcuserdata/rodrigosilvaribeiro.xcuserdatad/UserInterfaceState.xcuserstate and b/MentalCampfire.xcodeproj/project.xcworkspace/xcuserdata/rodrigosilvaribeiro.xcuserdatad/UserInterfaceState.xcuserstate differ
+diff --git a/MentalCampfire/Controller/AudioViewController.swift b/MentalCampfire/Controller/AudioViewController.swift
+new file mode 100644
+index 0000000..da9cec7
+--- /dev/null
++++ b/MentalCampfire/Controller/AudioViewController.swift
+@@ -0,0 +1,18 @@
++//
++//  AudioViewController.swift
++//  MentalCampfire
++//
++//  Created by Rodrigo Silva Ribeiro on 06/05/20.
++//  Copyright © 2020 Rodrigo Silva Ribeiro. All rights reserved.
++//
++
++import UIKit
++
++class AudioViewController: UIViewController {
++
++    override func viewDidLoad() {
++        super.viewDidLoad()
++
++    }
++
++}
+diff --git a/MentalCampfire/Controller/MidiaCollectionViewCell.swift b/MentalCampfire/Controller/MidiaCollectionViewCell.swift
+index 60acb48..e776b54 100644
+--- a/MentalCampfire/Controller/MidiaCollectionViewCell.swift
++++ b/MentalCampfire/Controller/MidiaCollectionViewCell.swift
+@@ -12,5 +12,6 @@ class MidiaCollectionViewCell: UICollectionViewCell {
+    
+     @IBOutlet weak var img: UIImageView!
+     @IBOutlet weak var label: UILabel!
++
+     
+ }
+diff --git a/MentalCampfire/Controller/MidiaTableViewCell.swift b/MentalCampfire/Controller/MidiaTableViewCell.swift
+index b3db8fd..00ad678 100644
+--- a/MentalCampfire/Controller/MidiaTableViewCell.swift
++++ b/MentalCampfire/Controller/MidiaTableViewCell.swift
+@@ -9,7 +9,7 @@
+ import UIKit
+ 
+ protocol MidiaTableViewCellDelegate: class {
+-    func didSelectItem(at indexPath: IndexPath, row: Int)
++    func didSelectItem(at indexPath: IndexPath, row: Int,imageName:String,name:String)
+ }
+ 
+ class MidiaTableViewCell: UITableViewCell {
+@@ -57,7 +57,8 @@ extension MidiaTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
+     }
+    
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+-        delegate?.didSelectItem(at: indexPath, row: row)
++        let currentItem = conteudo[indexPath.row]
++        delegate?.didSelectItem(at: indexPath, row: row, imageName: currentItem.img, name: currentItem.text)
+       //print("item at \(indexPath.section)/\(indexPath.item) tapped")
+     }
+     
+diff --git a/MentalCampfire/Controller/MidiaViewController.swift b/MentalCampfire/Controller/MidiaViewController.swift
+index 901c678..8c096bb 100644
+--- a/MentalCampfire/Controller/MidiaViewController.swift
++++ b/MentalCampfire/Controller/MidiaViewController.swift
+@@ -11,6 +11,9 @@ import UIKit
+ class MidiaViewController:UIViewController{
+     
+     @IBOutlet weak var tableView: UITableView!
++
++  
++    
+     
+     let conteudo = MidiaModel().midia
+     let label = MidiaModel().label
+@@ -43,7 +46,30 @@ extension MidiaViewController: UITableViewDelegate, UITableViewDataSource{
+ }
+ 
+ extension MidiaViewController: MidiaTableViewCellDelegate {
+-    func didSelectItem(at indexPath: IndexPath, row: Int) {
+-        print(row, indexPath.item)
++    func didSelectItem(at indexPath: IndexPath, row: Int,imageName:String,name:String ) {
++        if (label[row] == "Vídeos"){
++            let video = Video( name: name, imageName: imageName)
++            print(video)
++            self.performSegue(withIdentifier: "videoSegue", sender: video)
++        }else{
++            let audio = Audio( name: name, imageName: imageName)
++            self.performSegue(withIdentifier: "audioSegue", sender: audio)
++            print(audio)
++        }
+     }
++    
++//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
++//        switch segue.identifier {
++//        case "videoSegue":
++//            guard
++//                let destiny = segue.destination as? VideoViewController,
++//                let video = sender as? Video else { return }
++//
++//
++//        case "audioSegue":
++//
++//        default:
++//            print("Segue nao especificada")
++//        }
++//    }
+ }
+diff --git a/MentalCampfire/Controller/VideoViewController.swift b/MentalCampfire/Controller/VideoViewController.swift
+new file mode 100644
+index 0000000..e15db42
+--- /dev/null
++++ b/MentalCampfire/Controller/VideoViewController.swift
+@@ -0,0 +1,30 @@
++//
++//  VideoViewController.swift
++//  MentalCampfire
++//
++//  Created by Rodrigo Silva Ribeiro on 06/05/20.
++//  Copyright © 2020 Rodrigo Silva Ribeiro. All rights reserved.
++//
++
++import UIKit
++
++class VideoViewController: UIViewController {
++
++    override func viewDidLoad() {
++        super.viewDidLoad()
++
++        // Do any additional setup after loading the view.
++    }
++    
++
++    /*
++    // MARK: - Navigation
++
++    // In a storyboard-based application, you will often want to do a little preparation before navigation
++    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
++        // Get the new view controller using segue.destination.
++        // Pass the selected object to the new view controller.
++    }
++    */
++
++}
+diff --git a/MentalCampfire/Model/AudioInfo.swift b/MentalCampfire/Model/AudioInfo.swift
+new file mode 100644
+index 0000000..5aa1147
+--- /dev/null
++++ b/MentalCampfire/Model/AudioInfo.swift
+@@ -0,0 +1,14 @@
++//
++//  AudioInfo.swift
++//  MentalCampfire
++//
++//  Created by Rodrigo Silva Ribeiro on 06/05/20.
++//  Copyright © 2020 Rodrigo Silva Ribeiro. All rights reserved.
++//
++
++import Foundation
++
++struct Audio {
++    var name:String
++    var imageName:String
++}
+diff --git a/MentalCampfire/Model/VideoInfo.swift b/MentalCampfire/Model/VideoInfo.swift
+new file mode 100644
+index 0000000..b25e65d
+--- /dev/null
++++ b/MentalCampfire/Model/VideoInfo.swift
+@@ -0,0 +1,14 @@
++//
++//  AudioInfo.swift
++//  MentalCampfire
++//
++//  Created by Rodrigo Silva Ribeiro on 06/05/20.
++//  Copyright © 2020 Rodrigo Silva Ribeiro. All rights reserved.
++//
++
++import Foundation
++
++struct Video {
++    var name:String
++    var imageName:String
++}
+diff --git a/MentalCampfire/View/midia.storyboard b/MentalCampfire/View/midia.storyboard
+index c41ba89..f583a30 100644
+--- a/MentalCampfire/View/midia.storyboard
++++ b/MentalCampfire/View/midia.storyboard
+@@ -1,8 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rKO-AA-aCL">
++<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rKO-AA-aCL">
+     <device id="retina6_1" orientation="portrait" appearance="light"/>
+     <dependencies>
+-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
++        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+         <capability name="collection view cell content view" minToolsVersion="11.0"/>
+         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+@@ -119,11 +119,29 @@
+                     <navigationItem key="navigationItem" id="EZh-vh-h9f"/>
+                     <connections>
+                         <outlet property="tableView" destination="aOO-iv-Iqe" id="nWO-5u-Tjb"/>
++                        <segue destination="VuK-WZ-GDW" kind="show" identifier="videoSegue" id="dAV-uU-gxl"/>
++                        <segue destination="GQK-Wl-jzF" kind="show" identifier="audioSegue" id="qxG-vW-8MW"/>
+                     </connections>
+                 </viewController>
+                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWd-2i-rIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+             </objects>
+-            <point key="canvasLocation" x="1047.8260869565217" y="53.571428571428569"/>
++            <point key="canvasLocation" x="928" y="54"/>
++        </scene>
++        <!--Audio View Controller-->
++        <scene sceneID="Bb8-c7-TXK">
++            <objects>
++                <viewController id="GQK-Wl-jzF" customClass="AudioViewController" customModule="MentalCampfire" customModuleProvider="target" sceneMemberID="viewController">
++                    <view key="view" contentMode="scaleToFill" id="Rfj-Vx-EgU">
++                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
++                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
++                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
++                        <viewLayoutGuide key="safeArea" id="hlu-Jf-cXP"/>
++                    </view>
++                    <navigationItem key="navigationItem" id="UEF-wu-wHb"/>
++                </viewController>
++                <placeholder placeholderIdentifier="IBFirstResponder" id="qHo-mC-A15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
++            </objects>
++            <point key="canvasLocation" x="2003" y="436"/>
+         </scene>
+         <!--Mídia-->
+         <scene sceneID="Sup-uz-dNT">
+@@ -145,8 +163,24 @@
+             </objects>
+             <point key="canvasLocation" x="137.68115942028987" y="53.571428571428569"/>
+         </scene>
++        <!--Video View Controller-->
++        <scene sceneID="5yo-OQ-nCT">
++            <objects>
++                <viewController id="VuK-WZ-GDW" customClass="VideoViewController" customModule="MentalCampfire" customModuleProvider="target" sceneMemberID="viewController">
++                    <view key="view" contentMode="scaleToFill" id="TQF-iS-sMJ">
++                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
++                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
++                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
++                        <viewLayoutGuide key="safeArea" id="6kU-k4-Dep"/>
++                    </view>
++                    <navigationItem key="navigationItem" id="5qA-GU-FLj"/>
++                </viewController>
++                <placeholder placeholderIdentifier="IBFirstResponder" id="pdA-kN-Pkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
++            </objects>
++            <point key="canvasLocation" x="2006" y="-250"/>
++        </scene>
+     </scenes>
+     <resources>
+-        <image name="music.note" catalog="system" width="48" height="64"/>
++        <image name="music.note" catalog="system" width="97" height="128"/>
+     </resources>
+ </document>
