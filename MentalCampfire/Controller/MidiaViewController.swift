@@ -29,7 +29,8 @@ extension MidiaViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell = tableView.dequeueReusableCell(withIdentifier: "MidiaTableViewCell" , for: indexPath) as! MidiaTableViewCell
-        
+        cell.delegate = self
+        cell.row = indexPath.row
         cell.label.text = label[indexPath.row]
         cell.conteudo = conteudo[indexPath.row]
         return cell
@@ -38,6 +39,11 @@ extension MidiaViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 162
     }
-    
    
+}
+
+extension MidiaViewController: MidiaTableViewCellDelegate {
+    func didSelectItem(at indexPath: IndexPath, row: Int) {
+        print(row, indexPath.item)
+    }
 }

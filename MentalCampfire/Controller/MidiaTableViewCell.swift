@@ -8,12 +8,20 @@
 
 import UIKit
 
+protocol MidiaTableViewCellDelegate: class {
+    func didSelectItem(at indexPath: IndexPath, row: Int)
+}
+
 class MidiaTableViewCell: UITableViewCell {
     
     var conteudo: [(img: String, text:String)] = []
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    weak var delegate: MidiaTableViewCellDelegate?
+    
+    var row: Int!
   
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -48,6 +56,11 @@ extension MidiaTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.didSelectItem(at: indexPath, row: row)
+      //print("item at \(indexPath.section)/\(indexPath.item) tapped")
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 117, height: 111)
     }
