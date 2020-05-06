@@ -113,7 +113,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="zn3-8x-E0o">
-                                                    <rect key="frame" x="88" y="9" width="312" height="25"/>
+                                                    <rect key="frame" x="88" y="10" width="312" height="25"/>
                                                     <color key="minimumTrackTintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <connections>
                                                         <action selector="changeVolume:" destination="bTH-3p-rcS" eventType="valueChanged" id="bof-9J-7Ab"/>
@@ -179,6 +179,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="4eH-x9-gPN"/>
                     <connections>
+                        <outlet property="changePermission" destination="CWZ-kk-XVW" id="i9k-re-DLt"/>
+                        <outlet property="changeSound" destination="4si-fi-rRB" id="fuB-bP-jRQ"/>
+                        <outlet property="changeTimeSelectionTfd" destination="8yk-kn-Nqz" id="4C5-mF-f8r"/>
                         <outlet property="timeSelectionTfd" destination="9HQ-Jc-maR" id="e94-zU-i0v"/>
                     </connections>
                 </tableViewController>

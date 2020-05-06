@@ -7,9 +7,9 @@
 //
 
 import Foundation
+import AVFoundation
 
-struct PhraseModel {
-    
+struct FogueiraModel {
     
     var dayPhrase = ["\"A beleza começa no momento que você começa a ser você mesmo.\"",
                      "\"Queda após queda, desafio após desafio eu me fortaleço e me torno mais resiliente.\"\n[Coco Chanel]",
@@ -27,8 +27,34 @@ struct PhraseModel {
    
     
     var acess = Int.random(in: 0...11)
+    
     func getPhrase () -> String {
         return dayPhrase[acess]
     }
-        
+    
+    var player = AVAudioPlayer()
+       
+    mutating func SetupPlayer (nome:String, formato:String) -> AVAudioPlayer {
+           let sound = Bundle.main.path(forResource: nome, ofType: formato)
+           do {
+               player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+               player.setVolume(0.1, fadeDuration: 180)
+          } catch  {
+               print(error)
+              }
+           return player
+       }
+       
+   mutating func MyAudio () -> AVAudioPlayer {
+         return SetupPlayer (nome: "Fogueira", formato: "mp3")
+       }
+    
+    mutating func checkAudio() -> Bool {
+        if UserDefaults.standard.bool(forKey: "soundOn") == true {
+            return true
+        } else {
+            return false
+        }
+    }
+    
 }

@@ -12,6 +12,12 @@ import UIKit
 class ConfigStaticTableViewController: UITableViewController {
     
     
+    @IBOutlet weak var changePermission: UISwitch!
+    
+    @IBOutlet weak var changeSound: UISwitch!
+    
+    @IBOutlet weak var changeTimeSelectionTfd: UISwitch!
+    
     
     @IBOutlet weak var timeSelectionTfd: UITextField!
     
@@ -20,6 +26,7 @@ class ConfigStaticTableViewController: UITableViewController {
     let locale = NSLocale.current
     let toolBar = UIToolbar()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -27,21 +34,22 @@ class ConfigStaticTableViewController: UITableViewController {
     }
     
     @IBAction func changePermission(_ sender: UISwitch) {
-        
-        let message = sender.isOn ?
-        "Notificações ativas" : "Notificações desativadas"
-        print(message)
+            let message = sender.isOn ?
+                "Notificações ativas" : "Notificações desativadas"
+            print(message)
+      // UserDefaults.standard.set(true, forKey: "permissionOn") : UserDefaults.standard.set(false, forKey: "permissionOff")
     }
     
     @IBAction func changeSound(_ sender: UISwitch) {
-        let message = sender.isOn ?
+       let message = sender.isOn ?
             "Notificações ativas" : "Notificações desativadas"
         print(message)
     }
     
     @IBAction func changeVolume(_ sender: UISlider) {
-        
-        print("Volume está em : \(sender.value * 100)%")
+        let volume = sender.value
+        _ = UserDefaults.standard.set(sender.value, forKey: "Volume")
+        print( volume * 100 )
     }
     
     @IBAction func changeTimeSelectionTfd(_ sender: UISwitch) {
