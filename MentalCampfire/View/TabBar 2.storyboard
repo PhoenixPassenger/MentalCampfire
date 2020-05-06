@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xGl-e7-MsQ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LKW-2d-ywc">
+            <objects>
+                <tabBarController id="xGl-e7-MsQ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Trm-RT-yIU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Oaf-aO-Qeb" kind="relationship" relationship="viewControllers" id="5Xs-hy-uKW"/>
+                        <segue destination="p3x-cu-ebr" kind="relationship" relationship="viewControllers" id="t7g-j9-Wkj"/>
+                        <segue destination="0Us-Wt-6e9" kind="relationship" relationship="viewControllers" id="mhq-jf-wi4"/>
+                        <segue destination="aVh-MG-JT3" kind="relationship" relationship="viewControllers" id="ez1-c4-x2k"/>
+                        <segue destination="ueY-6c-R23" kind="relationship" relationship="viewControllers" id="LtY-2n-NoM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prx-1J-G4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686" y="-241"/>
+        </scene>
+        <!--configuracao-->
+        <scene sceneID="kcM-Ar-vSI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="configuracao" id="ueY-6c-R23" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="hpX-fO-Aq8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzg-qr-Rig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193" y="213"/>
+        </scene>
+        <!--Fogueira-->
+        <scene sceneID="XVf-iR-mE1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Fogueira" id="Oaf-aO-Qeb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Fogueira" image="flame" catalog="system" selectedImage="flame.fill" id="oNC-GH-UfU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDL-hk-1Na" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1196" y="213"/>
+        </scene>
+        <!--respiracao-->
+        <scene sceneID="5Qw-nu-P7R">
+            <objects>
+                <viewControllerPlaceholder storyboardName="respiracao" id="p3x-cu-ebr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Respiração" image="moon.circle" catalog="system" selectedImage="moon.circle.fill" id="PkK-2U-dqv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JUu-FW-yVx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-918" y="213"/>
+        </scene>
+        <!--meditacao-->
+        <scene sceneID="W5p-Uj-uQz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="meditacao" id="0Us-Wt-6e9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Meditação" image="eye" catalog="system" selectedImage="eye.fill" id="zv6-dd-91m"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gw3-wg-fHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-687" y="213"/>
+        </scene>
+        <!--midia-->
+        <scene sceneID="GZz-xN-V0y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="midia" id="aVh-MG-JT3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Mídia" image="music.note" catalog="system" selectedImage="music.note" id="0Xd-rC-gDj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VQn-AR-P4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-470" y="213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="eye" catalog="system" width="64" height="40"/>
+        <image name="eye.fill" catalog="system" width="64" height="38"/>
+        <image name="flame" catalog="system" width="54" height="64"/>
+        <image name="flame.fill" catalog="system" width="54" height="64"/>
+        <image name="moon.circle" catalog="system" width="64" height="60"/>
+        <image name="moon.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="music.note" catalog="system" width="48" height="64"/>
+    </resources>
+</document>
