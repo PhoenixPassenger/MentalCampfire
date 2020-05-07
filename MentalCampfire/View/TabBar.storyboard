@@ -14,17 +14,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Oaf-aO-Qeb" kind="relationship" relationship="viewControllers" id="5Xs-hy-uKW"/>
                         <segue destination="p3x-cu-ebr" kind="relationship" relationship="viewControllers" id="t7g-j9-Wkj"/>
                         <segue destination="0Us-Wt-6e9" kind="relationship" relationship="viewControllers" id="mhq-jf-wi4"/>
                         <segue destination="aVh-MG-JT3" kind="relationship" relationship="viewControllers" id="ez1-c4-x2k"/>
+                        <segue destination="ueY-6c-R23" kind="relationship" relationship="viewControllers" id="LtY-2n-NoM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Prx-1J-G4Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-686" y="-241"/>
+        </scene>
+        <!--configuracao-->
+        <scene sceneID="kcM-Ar-vSI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="configuracao" id="ueY-6c-R23" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="hpX-fO-Aq8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wzg-qr-Rig" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-193" y="213"/>
         </scene>
         <!--Fogueira-->
         <scene sceneID="XVf-iR-mE1">
