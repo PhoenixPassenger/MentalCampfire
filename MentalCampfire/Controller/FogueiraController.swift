@@ -11,7 +11,7 @@ import AVFoundation
 class FogueiraController: UIViewController {
     
     var phraseDay = FogueiraModel()
-    var soundFogueira = FogueiraModel()
+    var soundFogueira = Sounds()
     
     
     @IBOutlet weak var phraseLabel: UILabel!
@@ -19,10 +19,15 @@ class FogueiraController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         uptadeUI ()
+        if soundFogueira.checkAudio() {
             soundFogueira.MyAudio().play()
-    }
+        }else{
+            soundFogueira.MyAudio().pause()
+        }
+        }
     
     @objc func uptadeUI (){
+        soundFogueira.MyAudio().play()
         phraseLabel.text = phraseDay.getPhrase()
     }
     
@@ -31,6 +36,10 @@ class FogueiraController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-            soundFogueira.MyAudio().play()
+        if soundFogueira.checkAudio() {
+                soundFogueira.MyAudio().play()
+            }else{
+              soundFogueira.MyAudio().pause()
+            }
     }
 }

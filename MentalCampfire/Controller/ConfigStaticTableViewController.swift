@@ -13,13 +13,12 @@ class ConfigStaticTableViewController: UITableViewController {
     
     
     @IBOutlet weak var changePermission: UISwitch!
-    
     @IBOutlet weak var changeSound: UISwitch!
-    
     @IBOutlet weak var changeTimeSelectionTfd: UISwitch!
-    
-    
     @IBOutlet weak var timeSelectionTfd: UITextField!
+    
+    
+    var fogueira = Sounds()
     
     var datePicker = UIDatePicker()
     let dateFormatter = DateFormatter()
@@ -34,28 +33,27 @@ class ConfigStaticTableViewController: UITableViewController {
     }
     
     @IBAction func changePermission(_ sender: UISwitch) {
-            let message = sender.isOn ?
-                "Notificações ativas" : "Notificações desativadas"
-            print(message)
-      // UserDefaults.standard.set(true, forKey: "permissionOn") : UserDefaults.standard.set(false, forKey: "permissionOff")
+        let message = sender.isOn ?
+            true : false
+            UserDefaults.standard.set(message, forKey: "changePermission")
     }
     
     @IBAction func changeSound(_ sender: UISwitch) {
-       let message = sender.isOn ?
-            "Notificações ativas" : "Notificações desativadas"
-        print(message)
-    }
+      let message = sender.isOn ?
+          true : false
+          UserDefaults.standard.set(message, forKey: "changeSound")
+        }
+            
     
     @IBAction func changeVolume(_ sender: UISlider) {
-        let volume = sender.value
-        _ = UserDefaults.standard.set(sender.value, forKey: "Volume")
-        print( volume * 100 )
+        UserDefaults.standard.set(sender.value, forKey: "changeVolume")
+        
     }
     
     @IBAction func changeTimeSelectionTfd(_ sender: UISwitch) {
         let message = sender.isOn ?
-            "Notificações ativas" : "Notificações desativadas"
-        print(message)
+            true : false
+        UserDefaults.standard.set(message, forKey: "changeTimeSelection")
     }
     
     func createDatePicker(){
