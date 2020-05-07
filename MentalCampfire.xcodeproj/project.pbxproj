@@ -12,6 +12,7 @@
 		1982DE502460626800DC6B46 /* MidiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982DE4F2460626800DC6B46 /* MidiaTableViewCell.swift */; };
 		19EBE7E824619851005A5F44 /* MidiaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBE7E724619851005A5F44 /* MidiaCollectionViewCell.swift */; };
 		19EBE7EA24619ECA005A5F44 /* MidiaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBE7E924619ECA005A5F44 /* MidiaModel.swift */; };
+		1ACAF5C1246453B7003B439F /* respiracaoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4EF592463915000022828 /* respiracaoController.swift */; };
 		7B00C71B245303780080CB77 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71A245303780080CB77 /* TabBar.storyboard */; };
 		7B00C71D245390AB0080CB77 /* Fogueira.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71C245390AB0080CB77 /* Fogueira.storyboard */; };
 		7B00C71F245390D30080CB77 /* respiracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71E245390D30080CB77 /* respiracao.storyboard */; };
@@ -21,7 +22,6 @@
 		7B31FF6B245F832B007F37C3 /* FogueiraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B31FF6A245F832B007F37C3 /* FogueiraController.swift */; };
 		7B90F949245C9E7400F6689A /* configuracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B90F948245C9E7400F6689A /* configuracao.storyboard */; };
 		7B90F94B245C9FFE00F6689A /* ConfigStaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90F94A245C9FFE00F6689A /* ConfigStaticTableViewController.swift */; };
-		7BE4EF5A2463915000022828 /* respiracaoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4EF592463915000022828 /* respiracaoController.swift */; };
 		7BE4EF5C2463943200022828 /* BreatheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4EF5B2463943200022828 /* BreatheView.swift */; };
 		7BE4EF5E246395D300022828 /* CABasicAnimation+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4EF5D246395D300022828 /* CABasicAnimation+Custom.swift */; };
 		85044B312463142700A6D2D3 /* AudioInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85044B2F2463142700A6D2D3 /* AudioInfo.swift */; };
@@ -418,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ACAF5C1246453B7003B439F /* respiracaoController.swift in Sources */,
 				850F3EF52451D18E001E95C2 /* AppDelegate.swift in Sources */,
 				7B31FF6B245F832B007F37C3 /* FogueiraController.swift in Sources */,
 				7BE4EF5C2463943200022828 /* BreatheView.swift in Sources */,
