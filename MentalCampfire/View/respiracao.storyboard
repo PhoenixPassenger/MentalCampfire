@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdK-fy-Ie4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdK-fy-Ie4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Respiracao Controller-->
         <scene sceneID="xUM-Ob-ikI">
             <objects>
-                <viewController id="mf1-cp-l7R" sceneMemberID="viewController">
+                <viewController id="mf1-cp-l7R" customClass="respiracaoController" customModule="MentalCampfire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TUo-jI-2qj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +27,10 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="MIk-pg-Mdy"/>
                                 </constraints>
+                                <color key="minimumTrackTintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="nodesSliderDidChangeValue:" destination="mf1-cp-l7R" eventType="valueChanged" id="BtD-lw-LXa"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmb-3n-DsP">
                                 <rect key="frame" x="107" y="705.5" width="200" height="44"/>
@@ -35,7 +39,12 @@
                                     <constraint firstAttribute="width" constant="200" id="u37-WU-cR6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Respire"/>
+                                <state key="normal" title="COMEÇAR">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="animationsButtonDidTouchUpInside:" destination="mf1-cp-l7R" eventType="touchUpInside" id="lmV-gL-2pZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -51,6 +60,11 @@
                         <viewLayoutGuide key="safeArea" id="bP9-Qr-dbS"/>
                     </view>
                     <navigationItem key="navigationItem" id="XDh-ck-KCa"/>
+                    <connections>
+                        <outlet property="animationsButton" destination="gmb-3n-DsP" id="LPa-xI-JPI"/>
+                        <outlet property="containerView" destination="hXf-34-i5A" id="yxu-GW-O5d"/>
+                        <outlet property="slider" destination="XaB-70-UZs" id="XKw-Uc-8fa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOz-gk-0Jm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,7 +73,6 @@
         <!--Respiração-->
         <scene sceneID="hbU-GG-9bf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rpv-Cs-Nge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rdK-fy-Ie4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Respiração" image="moon.circle" catalog="system" selectedImage="moon.circle.fill" id="WP6-fx-hCh"/>
                     <toolbarItems/>
@@ -73,12 +86,13 @@
                         <segue destination="mf1-cp-l7R" kind="relationship" relationship="rootViewController" id="MQP-C9-Dla"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rpv-Cs-Nge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134.78260869565219" y="54.910714285714285"/>
         </scene>
     </scenes>
     <resources>
-        <image name="moon.circle" catalog="system" width="128" height="121"/>
-        <image name="moon.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="moon.circle" catalog="system" width="64" height="60"/>
+        <image name="moon.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

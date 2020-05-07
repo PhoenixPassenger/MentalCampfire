@@ -19,6 +19,7 @@ class respiracaoController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Respiração"
         breatheView = BreatheView(frame: containerView.frame)
         
         containerView.addSubview(breatheView)
@@ -26,7 +27,8 @@ class respiracaoController: UIViewController {
         breatheView.center = CGPoint(x: containerView.bounds.midX, y: containerView.bounds.midY)
         breatheView.autoresizingMask = [.flexibleLeftMargin, .flexibleRightMargin, .flexibleTopMargin, .flexibleBottomMargin]
         
-        animationsButton.titleLabel?.text = ButtonTitle.start.rawValue.uppercased()
+        animationsButton.titleLabel?.text = ButtonTitle.começar.rawValue.uppercased()
+        animationsButton.backgroundColor = #colorLiteral(red: 0.6, green: 0.8823529412, blue: 0.8980392157, alpha: 1)
         animationsButton.layer.cornerRadius = animationsButton.bounds.height/5
         
     }
@@ -41,19 +43,19 @@ class respiracaoController: UIViewController {
         setStateActive(!breatheView.isAnimating)
     }
     
-    private enum ButtonTitle: String { case start, stop }
+    private enum ButtonTitle: String { case começar, parar }
     
     private func setStateActive(_ isActive: Bool) {
         slider.isHidden = isActive
         if isActive {
             breatheView.startAnimations()
-            animationsButton.setTitle(ButtonTitle.stop.rawValue.uppercased(), for: .normal)
-            animationsButton.backgroundColor = .red
-            animationsButton.dropShadow(.red, opacity: 0.65, radius: 8.0)
+            animationsButton.setTitle(ButtonTitle.parar.rawValue.uppercased(), for: .normal)
+            animationsButton.backgroundColor = #colorLiteral(red: 0.9843137255, green: 0.6862745098, blue: 0.6862745098, alpha: 1)
+            //animationsButton.dropShadow(.red, opacity: 0.65, radius: 8.0)
         } else {
             breatheView.stopAnimations()
-            animationsButton.setTitle(ButtonTitle.start.rawValue.uppercased(), for: .normal)
-            animationsButton.backgroundColor = .darkGray
+            animationsButton.setTitle(ButtonTitle.começar.rawValue.uppercased(), for: .normal)
+            animationsButton.backgroundColor = #colorLiteral(red: 0.6, green: 0.8823529412, blue: 0.8980392157, alpha: 1)
             animationsButton.layer.shadowColor = UIColor.clear.cgColor
         }
     }

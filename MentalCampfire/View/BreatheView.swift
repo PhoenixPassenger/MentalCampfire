@@ -10,7 +10,7 @@ import UIKit
 
     public final class BreatheView: UIView {
         
-        public static let nodeColor: UIColor = UIColor(red: 100/255, green: 190/255, blue: 230/255, alpha: 1)
+        public static let nodeColor: UIColor = UIColor(red: 252/255, green: 102/255, blue: 129/255, alpha: 1)
         
         public override init(frame: CGRect) {
             super.init(frame: frame)
