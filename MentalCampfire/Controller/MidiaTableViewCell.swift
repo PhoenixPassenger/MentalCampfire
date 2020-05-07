@@ -9,7 +9,7 @@
 import UIKit
 
 protocol MidiaTableViewCellDelegate: class {
-    func didSelectItem(at indexPath: IndexPath, row: Int)
+    func didSelectItem(at indexPath: IndexPath, row: Int,imageName:String,name:String)
 }
 
 class MidiaTableViewCell: UITableViewCell {
@@ -57,7 +57,8 @@ extension MidiaTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
     }
    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.didSelectItem(at: indexPath, row: row)
+        let currentItem = conteudo[indexPath.row]
+        delegate?.didSelectItem(at: indexPath, row: row, imageName: currentItem.img, name: currentItem.text)
       //print("item at \(indexPath.section)/\(indexPath.item) tapped")
     }
     

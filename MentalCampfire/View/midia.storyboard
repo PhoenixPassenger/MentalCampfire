@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rKO-AA-aCL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rKO-AA-aCL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -119,11 +119,29 @@
                     <navigationItem key="navigationItem" id="EZh-vh-h9f"/>
                     <connections>
                         <outlet property="tableView" destination="aOO-iv-Iqe" id="nWO-5u-Tjb"/>
+                        <segue destination="VuK-WZ-GDW" kind="show" identifier="videoSegue" id="dAV-uU-gxl"/>
+                        <segue destination="GQK-Wl-jzF" kind="show" identifier="audioSegue" id="qxG-vW-8MW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nWd-2i-rIW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="53.571428571428569"/>
+            <point key="canvasLocation" x="928" y="54"/>
+        </scene>
+        <!--Audio View Controller-->
+        <scene sceneID="Bb8-c7-TXK">
+            <objects>
+                <viewController id="GQK-Wl-jzF" customClass="AudioViewController" customModule="MentalCampfire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rfj-Vx-EgU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="hlu-Jf-cXP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UEF-wu-wHb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHo-mC-A15" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2003" y="436"/>
         </scene>
         <!--Mídia-->
         <scene sceneID="Sup-uz-dNT">
@@ -145,8 +163,24 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="53.571428571428569"/>
         </scene>
+        <!--Video View Controller-->
+        <scene sceneID="5yo-OQ-nCT">
+            <objects>
+                <viewController id="VuK-WZ-GDW" customClass="VideoViewController" customModule="MentalCampfire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TQF-iS-sMJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6kU-k4-Dep"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5qA-GU-FLj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pdA-kN-Pkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2006" y="-250"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="music.note" catalog="system" width="48" height="64"/>
+        <image name="music.note" catalog="system" width="97" height="128"/>
     </resources>
 </document>
