@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+
 class VideoViewController: UIViewController {
     
     var video:Video? = nil
