@@ -44,7 +44,7 @@ class AudioViewController: UIViewController {
     }
     
     func setupPlayer() {
-        let sound = Bundle.main.path(forResource: "Invisible", ofType: "mp3")
+        let sound = Bundle.main.path(forResource: audio?.name, ofType: "mp3")
         do {
             player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         } catch  {
