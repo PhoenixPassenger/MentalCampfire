@@ -9,6 +9,6 @@
 import Foundation
 
 struct Audio {
-    var name:String
+    var titlulo:String
     var imageName:String
 }
