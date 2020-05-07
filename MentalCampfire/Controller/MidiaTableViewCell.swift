@@ -9,12 +9,12 @@
 import UIKit
 
 protocol MidiaTableViewCellDelegate: class {
-    func didSelectItem(at indexPath: IndexPath, row: Int,imageName:String,name:String)
+    func didSelectItem(at indexPath: IndexPath, row: Int,imageName:String,title:String, url:String)
 }
 
 class MidiaTableViewCell: UITableViewCell {
     
-    var conteudo: [(img: String, text:String)] = []
+    var conteudo: [(img: String, title:String, url:String)] = []
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -51,14 +51,16 @@ extension MidiaTableViewCell: UICollectionViewDelegate, UICollectionViewDataSour
         let currentItem = conteudo[indexPath.row]
         let myImage = UIImage(named: currentItem.img)
         cell.img.image = myImage
-        cell.label.text = currentItem.text
+        cell.label.text = currentItem.title
+        
+        cell.img.layer.cornerRadius = 10
         
         return cell
     }
    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let currentItem = conteudo[indexPath.row]
-        delegate?.didSelectItem(at: indexPath, row: row, imageName: currentItem.img, name: currentItem.text)
+        delegate?.didSelectItem(at: indexPath, row: row, imageName: currentItem.img, title: currentItem.title, url:currentItem.url)
       //print("item at \(indexPath.section)/\(indexPath.item) tapped")
     }
     

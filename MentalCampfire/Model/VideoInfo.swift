@@ -9,6 +9,6 @@
 import Foundation
 
 struct Video {
-    var name:String
-    var imageName:String
+    var titulo:String
+    var url:String
 }
