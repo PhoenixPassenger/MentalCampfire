@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdK-fy-Ie4">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdK-fy-Ie4">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,18 +12,18 @@
             <objects>
                 <viewController id="mf1-cp-l7R" customClass="respiracaoController" customModule="MentalCampfire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TUo-jI-2qj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXf-34-i5A">
-                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <rect key="frame" x="87" y="248" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="240" id="GAx-Jt-C4o"/>
                                     <constraint firstAttribute="width" constant="240" id="KwQ-wm-MKg"/>
                                 </constraints>
                             </containerView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XaB-70-UZs">
-                                <rect key="frame" x="105" y="655.5" width="204" height="31"/>
+                                <rect key="frame" x="105" y="518" width="204" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="MIk-pg-Mdy"/>
                                 </constraints>
@@ -33,7 +33,7 @@
                                 </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmb-3n-DsP">
-                                <rect key="frame" x="107" y="705.5" width="200" height="44"/>
+                                <rect key="frame" x="107" y="568" width="200" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Lsz-OW-iYa"/>
                                     <constraint firstAttribute="width" constant="200" id="u37-WU-cR6"/>
@@ -49,7 +49,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="XaB-70-UZs" firstAttribute="top" secondItem="hXf-34-i5A" secondAttribute="bottom" constant="87.5" id="CDg-5N-JOW"/>
+                            <constraint firstItem="XaB-70-UZs" firstAttribute="top" secondItem="hXf-34-i5A" secondAttribute="bottom" constant="30" id="CDg-5N-JOW"/>
                             <constraint firstItem="XaB-70-UZs" firstAttribute="centerX" secondItem="TUo-jI-2qj" secondAttribute="centerX" id="IMs-JE-PJ0"/>
                             <constraint firstItem="gmb-3n-DsP" firstAttribute="top" secondItem="XaB-70-UZs" secondAttribute="bottom" constant="20" id="S22-Ag-rXV"/>
                             <constraint firstItem="XaB-70-UZs" firstAttribute="centerX" secondItem="hXf-34-i5A" secondAttribute="centerX" id="WaU-g3-W2g"/>
@@ -78,7 +78,7 @@
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kBl-U3-Gok">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -92,7 +92,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="moon.circle" catalog="system" width="64" height="60"/>
-        <image name="moon.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="moon.circle" catalog="system" width="128" height="121"/>
+        <image name="moon.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
