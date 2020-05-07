@@ -58,18 +58,17 @@ extension MidiaViewController: MidiaTableViewCellDelegate {
         }
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        switch segue.identifier {
-//        case "videoSegue":
-//            guard
-//                let destiny = segue.destination as? VideoViewController,
-//                let video = sender as? Video else { return }
-//
-//
-//        case "audioSegue":
-//
-//        default:
-//            print("Segue nao especificada")
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "videoSegue":
+            let destiny = segue.destination as? VideoViewController
+            //destiny?.video = sender
+
+        case "audioSegue":
+            let destiny = segue.destination as? AudioViewController
+            destiny?.audio = (sender as! Audio)
+        default:
+            print("Segue nao especificada" )
+        }
+    }
 }
