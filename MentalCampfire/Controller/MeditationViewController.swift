@@ -32,7 +32,7 @@ class MeditationViewController: UIViewController {
     
     
     func setupPlayer() {
-        let sound = Bundle.main.path(forResource: "Invisible", ofType: "mp3")
+        let sound = Bundle.main.path(forResource: "Mountain", ofType: "mp3")
         do {
             player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         } catch  {

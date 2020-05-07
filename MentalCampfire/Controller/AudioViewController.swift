@@ -40,11 +40,11 @@ class AudioViewController: UIViewController {
         self.title = "AudioPlayer"
         setupPlayer()
         imageAudio.image = UIImage(named: audio!.imageName)
-        songName.text = audio!.name
+        songName.text = audio!.titlulo
     }
     
     func setupPlayer() {
-        let sound = Bundle.main.path(forResource: "Invisible", ofType: "mp3")
+        let sound = Bundle.main.path(forResource: audio?.titlulo, ofType: "mp3")
         do {
             player = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
         } catch  {

@@ -40,19 +40,19 @@ extension MidiaViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 162
+        return 190
     }
    
 }
 
 extension MidiaViewController: MidiaTableViewCellDelegate {
-    func didSelectItem(at indexPath: IndexPath, row: Int,imageName:String,name:String ) {
+    func didSelectItem(at indexPath: IndexPath, row: Int,imageName:String,title name:String , url:String) {
         if (label[row] == "Vídeos"){
-            let video = Video( name: name, imageName: imageName)
+            let video = Video( titulo: name, url: url)
             print(video)
             self.performSegue(withIdentifier: "videoSegue", sender: video)
         }else{
-            let audio = Audio( name: name, imageName: imageName)
+            let audio = Audio( titlulo: name, imageName: imageName)
             self.performSegue(withIdentifier: "audioSegue", sender: audio)
             print(audio)
         }
@@ -62,7 +62,7 @@ extension MidiaViewController: MidiaTableViewCellDelegate {
         switch segue.identifier {
         case "videoSegue":
             let destiny = segue.destination as? VideoViewController
-            //destiny?.video = sender
+            destiny?.video = (sender as! Video)
 
         case "audioSegue":
             let destiny = segue.destination as? AudioViewController

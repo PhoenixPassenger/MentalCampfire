@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		1982DE502460626800DC6B46 /* MidiaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982DE4F2460626800DC6B46 /* MidiaTableViewCell.swift */; };
 		19EBE7E824619851005A5F44 /* MidiaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBE7E724619851005A5F44 /* MidiaCollectionViewCell.swift */; };
 		19EBE7EA24619ECA005A5F44 /* MidiaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EBE7E924619ECA005A5F44 /* MidiaModel.swift */; };
+		1ACAF5C1246453B7003B439F /* respiracaoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4EF592463915000022828 /* respiracaoController.swift */; };
 		7B00C71B245303780080CB77 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71A245303780080CB77 /* TabBar.storyboard */; };
 		7B00C71D245390AB0080CB77 /* Fogueira.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71C245390AB0080CB77 /* Fogueira.storyboard */; };
 		7B00C71F245390D30080CB77 /* respiracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C71E245390D30080CB77 /* respiracao.storyboard */; };
@@ -19,14 +20,23 @@
 		7B00C7232453912B0080CB77 /* midia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C7222453912B0080CB77 /* midia.storyboard */; };
 		7B31FF69245F7E4D007F37C3 /* FogueiraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B31FF68245F7E4D007F37C3 /* FogueiraModel.swift */; };
 		7B31FF6B245F832B007F37C3 /* FogueiraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B31FF6A245F832B007F37C3 /* FogueiraController.swift */; };
+		7B8421592464AFFC001CB0B9 /* SoundModelFog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8421582464AFFC001CB0B9 /* SoundModelFog.swift */; };
 		7B90F949245C9E7400F6689A /* configuracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B90F948245C9E7400F6689A /* configuracao.storyboard */; };
 		7B90F94B245C9FFE00F6689A /* ConfigStaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90F94A245C9FFE00F6689A /* ConfigStaticTableViewController.swift */; };
+		7BE4EF5C2463943200022828 /* BreatheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4EF5B2463943200022828 /* BreatheView.swift */; };
+		7BE4EF5E246395D300022828 /* CABasicAnimation+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4EF5D246395D300022828 /* CABasicAnimation+Custom.swift */; };
 		85044B312463142700A6D2D3 /* AudioInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85044B2F2463142700A6D2D3 /* AudioInfo.swift */; };
 		85044B322463142700A6D2D3 /* VideoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85044B302463142700A6D2D3 /* VideoInfo.swift */; };
 		85044B3724642E2A00A6D2D3 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85044B3524642E2A00A6D2D3 /* AudioViewController.swift */; };
 		85044B3824642E2A00A6D2D3 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85044B3624642E2A00A6D2D3 /* VideoViewController.swift */; };
 		85044B3B24642E4000A6D2D3 /* ButtonConfig.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85044B3924642E4000A6D2D3 /* ButtonConfig.xib */; };
 		85044B3C24642E4000A6D2D3 /* TipsHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85044B3A24642E4000A6D2D3 /* TipsHeader.xib */; };
+		85044B42246447D700A6D2D3 /* Mountain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85044B41246447D700A6D2D3 /* Mountain.mp3 */; };
+		85044B462464495400A6D2D3 /* Downfall.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85044B442464495400A6D2D3 /* Downfall.mp3 */; };
+		85044B472464495400A6D2D3 /* Jazz.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85044B452464495400A6D2D3 /* Jazz.mp3 */; };
+		85044B4B24644A7B00A6D2D3 /* Country.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85044B4824644A7B00A6D2D3 /* Country.mp3 */; };
+		85044B4C24644A7B00A6D2D3 /* OperaRock.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85044B4924644A7B00A6D2D3 /* OperaRock.mp3 */; };
+		85044B4D24644A7B00A6D2D3 /* Blues.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 85044B4A24644A7B00A6D2D3 /* Blues.mp3 */; };
 		850F3EF52451D18E001E95C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F3EF42451D18E001E95C2 /* AppDelegate.swift */; };
 		850F3EF72451D18E001E95C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850F3EF62451D18E001E95C2 /* SceneDelegate.swift */; };
 		850F3EFE2451D195001E95C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850F3EFD2451D195001E95C2 /* Assets.xcassets */; };
@@ -37,7 +47,6 @@
 		852BC6E224585BF7007D2A66 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6E124585BF7007D2A66 /* TipsViewController.swift */; };
 		852BC6E4245861D6007D2A66 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6E3245861D6007D2A66 /* Tip.swift */; };
 		852BC6E62459A0F7007D2A66 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852BC6E52459A0F7007D2A66 /* MeditationViewController.swift */; };
-		852BC6E9245AFF9D007D2A66 /* Invisible.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 852BC6E8245AFF9D007D2A66 /* Invisible.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,14 +79,24 @@
 		7B00C7222453912B0080CB77 /* midia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = midia.storyboard; sourceTree = "<group>"; };
 		7B31FF68245F7E4D007F37C3 /* FogueiraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FogueiraModel.swift; sourceTree = "<group>"; };
 		7B31FF6A245F832B007F37C3 /* FogueiraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FogueiraController.swift; path = MentalCampfire/Controller/FogueiraController.swift; sourceTree = SOURCE_ROOT; };
+		7B8421582464AFFC001CB0B9 /* SoundModelFog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SoundModelFog.swift; path = MentalCampfire/Model/SoundModelFog.swift; sourceTree = SOURCE_ROOT; };
 		7B90F948245C9E7400F6689A /* configuracao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = configuracao.storyboard; sourceTree = "<group>"; };
 		7B90F94A245C9FFE00F6689A /* ConfigStaticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigStaticTableViewController.swift; sourceTree = "<group>"; };
+		7BE4EF592463915000022828 /* respiracaoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = respiracaoController.swift; sourceTree = "<group>"; };
+		7BE4EF5B2463943200022828 /* BreatheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BreatheView.swift; path = MentalCampfire/View/BreatheView.swift; sourceTree = SOURCE_ROOT; };
+		7BE4EF5D246395D300022828 /* CABasicAnimation+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CABasicAnimation+Custom.swift"; sourceTree = "<group>"; };
 		85044B2F2463142700A6D2D3 /* AudioInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioInfo.swift; sourceTree = "<group>"; };
 		85044B302463142700A6D2D3 /* VideoInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoInfo.swift; sourceTree = "<group>"; };
 		85044B3524642E2A00A6D2D3 /* AudioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 		85044B3624642E2A00A6D2D3 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		85044B3924642E4000A6D2D3 /* ButtonConfig.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonConfig.xib; sourceTree = "<group>"; };
 		85044B3A24642E4000A6D2D3 /* TipsHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TipsHeader.xib; sourceTree = "<group>"; };
+		85044B41246447D700A6D2D3 /* Mountain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Mountain.mp3; path = MentalCampfire/Mountain.mp3; sourceTree = SOURCE_ROOT; };
+		85044B442464495400A6D2D3 /* Downfall.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Downfall.mp3; path = MentalCampfire/Downfall.mp3; sourceTree = SOURCE_ROOT; };
+		85044B452464495400A6D2D3 /* Jazz.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Jazz.mp3; path = MentalCampfire/Jazz.mp3; sourceTree = SOURCE_ROOT; };
+		85044B4824644A7B00A6D2D3 /* Country.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Country.mp3; path = MentalCampfire/Country.mp3; sourceTree = SOURCE_ROOT; };
+		85044B4924644A7B00A6D2D3 /* OperaRock.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = OperaRock.mp3; path = MentalCampfire/OperaRock.mp3; sourceTree = SOURCE_ROOT; };
+		85044B4A24644A7B00A6D2D3 /* Blues.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Blues.mp3; path = MentalCampfire/Blues.mp3; sourceTree = SOURCE_ROOT; };
 		850F3EF12451D18E001E95C2 /* MentalCampfire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentalCampfire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		850F3EF42451D18E001E95C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		850F3EF62451D18E001E95C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,7 +113,6 @@
 		852BC6E124585BF7007D2A66 /* TipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		852BC6E3245861D6007D2A66 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tip.swift; path = MentalCampfire/View/Tip.swift; sourceTree = SOURCE_ROOT; };
 		852BC6E52459A0F7007D2A66 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
-		852BC6E8245AFF9D007D2A66 /* Invisible.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Invisible.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +177,7 @@
 				1982DE4D24605FBF00DC6B46 /* MidiaViewController.swift */,
 				1982DE4F2460626800DC6B46 /* MidiaTableViewCell.swift */,
 				19EBE7E724619851005A5F44 /* MidiaCollectionViewCell.swift */,
+				7BE4EF592463915000022828 /* respiracaoController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -166,13 +185,28 @@
 		7B00C719245303560080CB77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B8421582464AFFC001CB0B9 /* SoundModelFog.swift */,
 				85044B2F2463142700A6D2D3 /* AudioInfo.swift */,
 				85044B302463142700A6D2D3 /* VideoInfo.swift */,
 				7B31FF68245F7E4D007F37C3 /* FogueiraModel.swift */,
 				852BC6E3245861D6007D2A66 /* Tip.swift */,
 				19EBE7E924619ECA005A5F44 /* MidiaModel.swift */,
+				7BE4EF5D246395D300022828 /* CABasicAnimation+Custom.swift */,
+				7BE4EF5B2463943200022828 /* BreatheView.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		85044B432464494100A6D2D3 /* AudioSongs */ = {
+			isa = PBXGroup;
+			children = (
+				85044B4A24644A7B00A6D2D3 /* Blues.mp3 */,
+				85044B4824644A7B00A6D2D3 /* Country.mp3 */,
+				85044B4924644A7B00A6D2D3 /* OperaRock.mp3 */,
+				85044B442464495400A6D2D3 /* Downfall.mp3 */,
+				85044B452464495400A6D2D3 /* Jazz.mp3 */,
+			);
+			path = AudioSongs;
 			sourceTree = "<group>";
 		};
 		850F3EE82451D18E001E95C2 = {
@@ -199,6 +233,7 @@
 		850F3EF32451D18E001E95C2 /* MentalCampfire */ = {
 			isa = PBXGroup;
 			children = (
+				85044B432464494100A6D2D3 /* AudioSongs */,
 				1982DE49246047AA00DC6B46 /* FogueiraAudio */,
 				850F3EF42451D18E001E95C2 /* AppDelegate.swift */,
 				850F3EF62451D18E001E95C2 /* SceneDelegate.swift */,
@@ -232,7 +267,7 @@
 		852BC6E7245AFF7D007D2A66 /* meditationAudio */ = {
 			isa = PBXGroup;
 			children = (
-				852BC6E8245AFF9D007D2A66 /* Invisible.mp3 */,
+				85044B41246447D700A6D2D3 /* Mountain.mp3 */,
 			);
 			path = meditationAudio;
 			sourceTree = "<group>";
@@ -305,19 +340,22 @@
 				TargetAttributes = {
 					850F3EF02451D18E001E95C2 = {
 						CreatedOnToolsVersion = 11.4;
+						ProvisioningStyle = Automatic;
 					};
 					850F3F062451D195001E95C2 = {
 						CreatedOnToolsVersion = 11.4;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 850F3EF02451D18E001E95C2;
 					};
 					850F3F112451D195001E95C2 = {
 						CreatedOnToolsVersion = 11.4;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 850F3EF02451D18E001E95C2;
 					};
 				};
 			};
 			buildConfigurationList = 850F3EEC2451D18E001E95C2 /* Build configuration list for PBXProject "MentalCampfire" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -341,19 +379,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85044B4B24644A7B00A6D2D3 /* Country.mp3 in Resources */,
 				7B00C721245390F20080CB77 /* meditacao.storyboard in Resources */,
+				85044B4D24644A7B00A6D2D3 /* Blues.mp3 in Resources */,
 				7B90F949245C9E7400F6689A /* configuracao.storyboard in Resources */,
 				85044B3C24642E4000A6D2D3 /* TipsHeader.xib in Resources */,
 				7B00C71B245303780080CB77 /* TabBar.storyboard in Resources */,
 				85044B3B24642E4000A6D2D3 /* ButtonConfig.xib in Resources */,
+				85044B472464495400A6D2D3 /* Jazz.mp3 in Resources */,
 				850F3F252451D503001E95C2 /* .gitignore in Resources */,
 				7B00C7232453912B0080CB77 /* midia.storyboard in Resources */,
 				850F3F012451D195001E95C2 /* LaunchScreen.storyboard in Resources */,
-				852BC6E9245AFF9D007D2A66 /* Invisible.mp3 in Resources */,
 				1982DE4C24604E4E00DC6B46 /* Fogueira.mp3 in Resources */,
 				7B00C71F245390D30080CB77 /* respiracao.storyboard in Resources */,
+				85044B462464495400A6D2D3 /* Downfall.mp3 in Resources */,
 				7B00C71D245390AB0080CB77 /* Fogueira.storyboard in Resources */,
+				85044B4C24644A7B00A6D2D3 /* OperaRock.mp3 in Resources */,
 				850F3EFE2451D195001E95C2 /* Assets.xcassets in Resources */,
+				85044B42246447D700A6D2D3 /* Mountain.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,8 +421,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8421592464AFFC001CB0B9 /* SoundModelFog.swift in Sources */,
+				1ACAF5C1246453B7003B439F /* respiracaoController.swift in Sources */,
 				850F3EF52451D18E001E95C2 /* AppDelegate.swift in Sources */,
 				7B31FF6B245F832B007F37C3 /* FogueiraController.swift in Sources */,
+				7BE4EF5C2463943200022828 /* BreatheView.swift in Sources */,
 				852BC6E4245861D6007D2A66 /* Tip.swift in Sources */,
 				852BC6E62459A0F7007D2A66 /* MeditationViewController.swift in Sources */,
 				85044B3724642E2A00A6D2D3 /* AudioViewController.swift in Sources */,
@@ -390,6 +436,7 @@
 				1982DE4E24605FBF00DC6B46 /* MidiaViewController.swift in Sources */,
 				85044B312463142700A6D2D3 /* AudioInfo.swift in Sources */,
 				19EBE7EA24619ECA005A5F44 /* MidiaModel.swift in Sources */,
+				7BE4EF5E246395D300022828 /* CABasicAnimation+Custom.swift in Sources */,
 				852BC6E224585BF7007D2A66 /* TipsViewController.swift in Sources */,
 				7B90F94B245C9FFE00F6689A /* ConfigStaticTableViewController.swift in Sources */,
 				19EBE7E824619851005A5F44 /* MidiaCollectionViewCell.swift in Sources */,
@@ -548,8 +595,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -559,12 +605,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 795A25396T;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MentalCampfire/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MentalCampfire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -577,12 +620,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 795A25396T;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MentalCampfire/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MentalCampfire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -599,11 +639,7 @@
 				DEVELOPMENT_TEAM = 795A25396T;
 				INFOPLIST_FILE = MentalCampfireTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MentalCampfireTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -621,11 +657,7 @@
 				DEVELOPMENT_TEAM = 795A25396T;
 				INFOPLIST_FILE = MentalCampfireTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MentalCampfireTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -641,11 +673,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 795A25396T;
 				INFOPLIST_FILE = MentalCampfireUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MentalCampfireUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -661,11 +689,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 795A25396T;
 				INFOPLIST_FILE = MentalCampfireUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodrigo.MentalCampfireUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
