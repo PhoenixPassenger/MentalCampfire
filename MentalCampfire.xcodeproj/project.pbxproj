@@ -20,6 +20,7 @@
 		7B00C7232453912B0080CB77 /* midia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B00C7222453912B0080CB77 /* midia.storyboard */; };
 		7B31FF69245F7E4D007F37C3 /* FogueiraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B31FF68245F7E4D007F37C3 /* FogueiraModel.swift */; };
 		7B31FF6B245F832B007F37C3 /* FogueiraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B31FF6A245F832B007F37C3 /* FogueiraController.swift */; };
+		7B8421592464AFFC001CB0B9 /* SoundModelFog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8421582464AFFC001CB0B9 /* SoundModelFog.swift */; };
 		7B90F949245C9E7400F6689A /* configuracao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B90F948245C9E7400F6689A /* configuracao.storyboard */; };
 		7B90F94B245C9FFE00F6689A /* ConfigStaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B90F94A245C9FFE00F6689A /* ConfigStaticTableViewController.swift */; };
 		7BE4EF5C2463943200022828 /* BreatheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE4EF5B2463943200022828 /* BreatheView.swift */; };
@@ -78,6 +79,7 @@
 		7B00C7222453912B0080CB77 /* midia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = midia.storyboard; sourceTree = "<group>"; };
 		7B31FF68245F7E4D007F37C3 /* FogueiraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FogueiraModel.swift; sourceTree = "<group>"; };
 		7B31FF6A245F832B007F37C3 /* FogueiraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FogueiraController.swift; path = MentalCampfire/Controller/FogueiraController.swift; sourceTree = SOURCE_ROOT; };
+		7B8421582464AFFC001CB0B9 /* SoundModelFog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SoundModelFog.swift; path = MentalCampfire/Model/SoundModelFog.swift; sourceTree = SOURCE_ROOT; };
 		7B90F948245C9E7400F6689A /* configuracao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = configuracao.storyboard; sourceTree = "<group>"; };
 		7B90F94A245C9FFE00F6689A /* ConfigStaticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigStaticTableViewController.swift; sourceTree = "<group>"; };
 		7BE4EF592463915000022828 /* respiracaoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = respiracaoController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		7B00C719245303560080CB77 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B8421582464AFFC001CB0B9 /* SoundModelFog.swift */,
 				85044B2F2463142700A6D2D3 /* AudioInfo.swift */,
 				85044B302463142700A6D2D3 /* VideoInfo.swift */,
 				7B31FF68245F7E4D007F37C3 /* FogueiraModel.swift */,
@@ -418,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8421592464AFFC001CB0B9 /* SoundModelFog.swift in Sources */,
 				1ACAF5C1246453B7003B439F /* respiracaoController.swift in Sources */,
 				850F3EF52451D18E001E95C2 /* AppDelegate.swift in Sources */,
 				7B31FF6B245F832B007F37C3 /* FogueiraController.swift in Sources */,

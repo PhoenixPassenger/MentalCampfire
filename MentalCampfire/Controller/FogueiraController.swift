@@ -11,26 +11,31 @@ import AVFoundation
 class FogueiraController: UIViewController {
     
     var phraseDay = FogueiraModel()
-    var soundFogueira = FogueiraModel()
+    var soundFogueira = Sounds()
     
     
     @IBOutlet weak var phraseLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        uptadeUI ()
+            override func viewDidLoad() {
+            super.viewDidLoad()
+            uptadeUI ()
             soundFogueira.MyAudio().play()
-    }
-    
-    @objc func uptadeUI (){
-        phraseLabel.text = phraseDay.getPhrase()
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        soundFogueira.MyAudio().pause()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
+
+            }
+        
+        @objc func uptadeUI (){
             soundFogueira.MyAudio().play()
+            phraseLabel.text = phraseDay.getPhrase()
+        }
+        
+        override func viewDidDisappear(_ animated: Bool) {
+            soundFogueira.MyAudio().pause()
+        }
+        
+        override func viewWillAppear(_ animated: Bool) {
+            if soundFogueira.checkAudio() {
+                    soundFogueira.MyAudio().play()
+                }else{
+                  soundFogueira.MyAudio().pause()
+                }
+        }
     }
-}

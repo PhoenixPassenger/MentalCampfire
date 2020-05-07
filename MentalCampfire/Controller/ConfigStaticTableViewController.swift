@@ -27,6 +27,7 @@ class ConfigStaticTableViewController: UITableViewController {
     let toolBar = UIToolbar()
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -34,28 +35,26 @@ class ConfigStaticTableViewController: UITableViewController {
     }
     
     @IBAction func changePermission(_ sender: UISwitch) {
-            let message = sender.isOn ?
-                "Notificações ativas" : "Notificações desativadas"
-            print(message)
-      // UserDefaults.standard.set(true, forKey: "permissionOn") : UserDefaults.standard.set(false, forKey: "permissionOff")
+        let message = sender.isOn ?
+            true : false
+        UserDefaults.standard.set(message, forKey: "changePermission")
+        
     }
     
     @IBAction func changeSound(_ sender: UISwitch) {
-       let message = sender.isOn ?
-            "Notificações ativas" : "Notificações desativadas"
-        print(message)
+        let message = sender.isOn ?
+            true : false
+        UserDefaults.standard.set(message, forKey: "changeSound")
     }
     
     @IBAction func changeVolume(_ sender: UISlider) {
-        let volume = sender.value
-        _ = UserDefaults.standard.set(sender.value, forKey: "Volume")
-        print( volume * 100 )
+        UserDefaults.standard.set (sender.value, forKey: "changeVolume")
     }
     
     @IBAction func changeTimeSelectionTfd(_ sender: UISwitch) {
         let message = sender.isOn ?
-            "Notificações ativas" : "Notificações desativadas"
-        print(message)
+            true : false
+        UserDefaults.standard.set(message, forKey: "changeTimeSelection")
     }
     
     func createDatePicker(){
@@ -68,7 +67,7 @@ class ConfigStaticTableViewController: UITableViewController {
         self.datePicker.backgroundColor = UIColor.white
         self.datePicker.datePickerMode = UIDatePicker.Mode.time
         datePicker.center = view.center
-       
+        
         // ToolBar
         let toolBar = UIToolbar()
         toolBar.frame = CGRect(x: 0, y: UIScreen.main.bounds.height - 240.0, width: UIScreen.main.bounds.width, height: 44.0)
@@ -93,14 +92,14 @@ class ConfigStaticTableViewController: UITableViewController {
         formatter1.dateStyle = .none
         formatter1.timeStyle = .short
         self.view.endEditing(true)
-  
+        
         timeSelectionTfd.text = formatter1.string(from: datePicker.date)
-  }
+    }
     
-     @objc func cancelClick() {
+    @objc func cancelClick() {
         self.view.endEditing(true)
-
-     }
+        
+    }
     
 }
 
