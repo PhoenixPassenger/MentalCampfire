@@ -23,11 +23,11 @@ struct MidiaModel{
         ],
 
         [
-               (img: "musica01", text: "Sons da natureza"),
-               (img: "musica02", text: "Música relaxante"),
-               (img: "musica03", text: "Sons que acalmam"),
-               (img: "musica04", text: "Música clássica para relaxar"),
-               (img: "musica05", text: "Som de chuva")
+               (img: "musica04", text: "Jazz"),
+               (img: "musica03", text: "Downfall"),
+               (img: "musica01", text: "OperaRock"),
+               (img: "musica05", text: "Country"),
+               (img: "musica02", text: "Blues")
            ]
       ]
     
