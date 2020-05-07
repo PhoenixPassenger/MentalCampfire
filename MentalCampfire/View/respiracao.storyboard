@@ -1,23 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdK-fy-Ie4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdK-fy-Ie4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Respiracao Controller-->
         <scene sceneID="xUM-Ob-ikI">
             <objects>
-                <viewController id="mf1-cp-l7R" sceneMemberID="viewController">
+                <viewController id="mf1-cp-l7R" customClass="respiracaoController" customModule="MentalCampfire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TUo-jI-2qj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hXf-34-i5A">
+                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="GAx-Jt-C4o"/>
+                                    <constraint firstAttribute="width" constant="240" id="KwQ-wm-MKg"/>
+                                </constraints>
+                            </containerView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XaB-70-UZs">
+                                <rect key="frame" x="105" y="655.5" width="204" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="MIk-pg-Mdy"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.98823529409999999" green="0.40000000000000002" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="nodesSliderDidChangeValue:" destination="mf1-cp-l7R" eventType="valueChanged" id="Xao-NF-w8U"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmb-3n-DsP">
+                                <rect key="frame" x="107" y="705.5" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Lsz-OW-iYa"/>
+                                    <constraint firstAttribute="width" constant="200" id="u37-WU-cR6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="COMEÇAR">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.96862745100000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="animationsButtonDidTouchUpInside:" destination="mf1-cp-l7R" eventType="touchUpInside" id="vcV-4N-pKf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XaB-70-UZs" firstAttribute="top" secondItem="hXf-34-i5A" secondAttribute="bottom" constant="87.5" id="CDg-5N-JOW"/>
+                            <constraint firstItem="XaB-70-UZs" firstAttribute="centerX" secondItem="TUo-jI-2qj" secondAttribute="centerX" id="IMs-JE-PJ0"/>
+                            <constraint firstItem="gmb-3n-DsP" firstAttribute="top" secondItem="XaB-70-UZs" secondAttribute="bottom" constant="20" id="S22-Ag-rXV"/>
+                            <constraint firstItem="XaB-70-UZs" firstAttribute="centerX" secondItem="hXf-34-i5A" secondAttribute="centerX" id="WaU-g3-W2g"/>
+                            <constraint firstItem="hXf-34-i5A" firstAttribute="centerY" secondItem="TUo-jI-2qj" secondAttribute="centerY" id="kDP-vz-UhC"/>
+                            <constraint firstItem="gmb-3n-DsP" firstAttribute="centerX" secondItem="XaB-70-UZs" secondAttribute="centerX" id="rg1-wE-74Q"/>
+                            <constraint firstItem="hXf-34-i5A" firstAttribute="centerX" secondItem="TUo-jI-2qj" secondAttribute="centerX" id="zcL-gg-SoV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bP9-Qr-dbS"/>
                     </view>
                     <navigationItem key="navigationItem" id="XDh-ck-KCa"/>
+                    <connections>
+                        <outlet property="animationsButton" destination="gmb-3n-DsP" id="DU3-gW-fYO"/>
+                        <outlet property="containerView" destination="hXf-34-i5A" id="HH4-Nd-ZlS"/>
+                        <outlet property="slider" destination="XaB-70-UZs" id="7Pb-VT-VoX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOz-gk-0Jm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,7 +92,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="moon.circle" catalog="system" width="128" height="121"/>
-        <image name="moon.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="moon.circle" catalog="system" width="64" height="60"/>
+        <image name="moon.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
