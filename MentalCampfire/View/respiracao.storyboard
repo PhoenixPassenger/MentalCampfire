@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="width" constant="240" id="KwQ-wm-MKg"/>
                                 </constraints>
                             </containerView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XaB-70-UZs">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="5" maxValue="11" translatesAutoresizingMaskIntoConstraints="NO" id="XaB-70-UZs">
                                 <rect key="frame" x="105" y="518" width="204" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="MIk-pg-Mdy"/>
