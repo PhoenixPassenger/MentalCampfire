@@ -21,7 +21,7 @@ struct Tip {
         case 3:
             return Tip(Title: "Desenvolva uma atitude afetuosa", Text: "Quando você perceber pensamentos e sentimentos surgindo durante a meditação, olhe para eles com uma atitude amigável, não intrusos ou inimigos. Eles são parte de você. Seja amigável e não rude.")
         case 0:
-            return Tip(Title: "Yoda about dark side", Text: "Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.")
+            return Tip(Title: "Construa um hábito", Text: "Quando sentimos a necessidade de fazer muitas outras coisas antes de meditar, na verdade é apenas uma tática de atraso, encontrando uma desculpa para não meditar. Construir um bom hábito de meditação requer esforço e consistência. É como ir à academia – a princípio pode parecer forçado e artificial, mas com o tempo se torna uma parte natural e essencial de nossa rotina diária.")
         default:
              return Tip(Title: "Yoda about dark side", Text: "Fear is the path to the dark side. Fear leads to anger. Anger leads to hate. Hate leads to suffering.")
         }

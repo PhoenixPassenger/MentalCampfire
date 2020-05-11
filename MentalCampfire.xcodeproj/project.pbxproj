@@ -334,6 +334,7 @@
 		850F3EE92451D18E001E95C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = NO;
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Rodrigo Silva Ribeiro";
